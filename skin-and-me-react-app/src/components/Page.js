@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import CardOne from "./CardOne";
+import CardTwo from "./CardTwo";
+import CardThree from "./CardThree";
 
 const Container = styled.div`
   position: absolute;
@@ -11,7 +14,9 @@ const Container = styled.div`
 function Page() {
   return (
     <Container>
-      <h1>Skin+Me</h1>
+      <CardOne />
+      <CardTwo />
+      <CardThree />
     </Container>
   );
 }
