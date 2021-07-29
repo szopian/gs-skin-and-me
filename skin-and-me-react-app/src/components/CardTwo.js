@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ButtonOne from "./ButtonOne";
 
 const Card = styled.div`
   width: 860px;
@@ -8,7 +9,11 @@ const Card = styled.div`
 `;
 
 function CardTwo() {
-  return <Card></Card>;
+  return (
+    <Card>
+      <ButtonOne />
+    </Card>
+  );
 }
 
 export default CardTwo;
