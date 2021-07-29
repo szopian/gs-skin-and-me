@@ -1,9 +1,7 @@
+import Page from "./components/Page";
+
 function App() {
-  return (
-    <div>
-      <h1>Skin+Me</h1>
-    </div>
-  );
+  return <Page />;
 }
 
 export default App;
