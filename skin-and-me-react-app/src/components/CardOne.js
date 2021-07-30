@@ -12,6 +12,7 @@ const Card = styled.div`
 
 const Container = styled.div`
   grid-column: 1;
+  padding-right: 180px;
 `;
 
 const Title = styled.h1`
@@ -45,11 +46,26 @@ const Img = styled.div`
   width: 263.37px;
   height: 263.37px;
   position: relative;
+  /* margin-top: 10px; */
+  margin-right: -19px;
 
   grid-column: 2;
-  /* border: 2px dashed #ffbc00;
-  box-sizing: border-box;
-  border-radius: 360px; */
+
+  border: 4px dashed #ffbc00;
+  /* box-sizing: border-box; */
+  border-radius: 360px;
+  box-shadow: 0px 20px 0px rgba(212, 227, 238, 0.8);
+`;
+
+const Logo = styled.div`
+  position: relative;
+  top: 50%;
+  text-align: center;
+  transform: translate(0, -50%);
+  padding: 1rem;
+  font-size: 45px;
+  color: #ffbc00;
+  text-shadow: 3px 6px 1px rgba(212, 227, 238, 0.5);
 `;
 
 function CardOne() {
@@ -65,7 +81,9 @@ function CardOne() {
         </Content>
         <ButtonOne />
       </Container>
-      <Img />
+      <Img>
+        <Logo>Skin + Me</Logo>
+      </Img>
     </Card>
   );
 }
