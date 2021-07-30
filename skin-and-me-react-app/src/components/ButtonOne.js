@@ -16,6 +16,7 @@ const Button = styled.button`
   font-weight: 700 bold;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-decoration: none;
   color: #0b0c0c;
   transition: all 0.3s ease 0s;
   -webkit-box-pack: center;
@@ -28,7 +29,11 @@ const Button = styled.button`
 `;
 
 function ButtonOne() {
-  return <Button>CLICK ME!!</Button>;
+  return (
+    <Button as="a" href="https://www.skinandme.com/" type="_blank">
+      Check it out
+    </Button>
+  );
 }
 
 export default ButtonOne;
