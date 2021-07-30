@@ -53,7 +53,7 @@ const Img = styled.div`
   grid-column: 2;
 
   border: 4px dashed #ffbc00;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   border-radius: 360px;
   box-shadow: 0px 20px 0px rgba(212, 227, 238, 0.8);
 `;
