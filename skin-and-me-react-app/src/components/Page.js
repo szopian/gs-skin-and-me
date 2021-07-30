@@ -9,6 +9,8 @@ const Container = styled.div`
   max-width: 1440px;
   max-height: 1185px;
   background: #ffffff;
+  width: 100%;
+  height: 100vh;
 `;
 
 function Page() {

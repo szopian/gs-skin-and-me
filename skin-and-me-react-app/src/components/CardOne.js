@@ -6,9 +6,13 @@ const Card = styled.div`
   max-width: 879px;
   height: 300.2px;
   padding: 100px 290px;
+  display: grid;
+  justify-content: center;
 `;
 
-const Container = styled.div``;
+const Container = styled.div`
+  grid-column: 1;
+`;
 
 const Title = styled.h1`
   width: 384px;
@@ -37,7 +41,16 @@ const Content = styled.p`
   color: #0b0c0c;
 `;
 
-const Img = styled.img``;
+const Img = styled.div`
+  width: 263.37px;
+  height: 263.37px;
+  position: relative;
+
+  grid-column: 2;
+  /* border: 2px dashed #ffbc00;
+  box-sizing: border-box;
+  border-radius: 360px; */
+`;
 
 function CardOne() {
   return (
