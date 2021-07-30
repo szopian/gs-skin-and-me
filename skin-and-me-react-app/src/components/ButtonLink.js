@@ -28,12 +28,12 @@ const Button = styled.button`
   }
 `;
 
-function ButtonOne() {
+function ButtonLink({ Links, bText }) {
   return (
-    <Button as="a" href="https://www.skinandme.com/" type="_blank">
-      Check it out
+    <Button as="a" href={Links} target="_blank">
+      {bText}
     </Button>
   );
 }
 
-export default ButtonOne;
+export default ButtonLink;

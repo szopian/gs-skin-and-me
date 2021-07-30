@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import ButtonOne from "./ButtonOne";
+import Data from "../data.json";
+import ButtonLink from "./ButtonLink";
 
 const Card = styled.div`
   width: 860px;
@@ -11,7 +12,10 @@ const Card = styled.div`
 function CardTwo() {
   return (
     <Card>
-      <ButtonOne />
+      <ButtonLink
+        Links={Data.components[1].link}
+        bText={Data.components[1].buttonText}
+      />
     </Card>
   );
 }

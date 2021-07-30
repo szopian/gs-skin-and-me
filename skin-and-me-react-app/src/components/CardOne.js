@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import ButtonOne from "./ButtonOne";
+import ButtonLink from "./ButtonLink";
 import { rotate } from "../animations/animation";
+import Data from "../data.json";
 
 const Card = styled.div`
   max-width: 879px;
@@ -48,7 +49,7 @@ const Img = styled.div`
   width: 263.37px;
   height: 263.37px;
   position: relative;
-  /* margin-top: 10px; */
+  margin-top: 10px;
   margin-right: -19px;
 
   grid-column: 2;
@@ -82,7 +83,10 @@ function CardOne() {
           use and when to use it, with the products our expert Dermatology Team
           recommend for you and your skin.
         </Content>
-        <ButtonOne />
+        <ButtonLink
+          Links={Data.components[0].link}
+          bText={Data.components[0].buttonText}
+        />
       </Container>
       <Img>
         <Logo>Skin + Me</Logo>
