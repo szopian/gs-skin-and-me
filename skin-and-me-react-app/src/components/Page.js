@@ -6,8 +6,8 @@ import CardThree from "./CardThree";
 
 const Container = styled.div`
   position: absolute;
-  width: 1440px;
-  height: 1185px;
+  max-width: 1440px;
+  max-height: 1185px;
   background: #ffffff;
 `;
 

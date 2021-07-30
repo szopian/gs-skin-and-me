@@ -6,18 +6,37 @@ import ButtonOne from "./ButtonOne";
 // font-family: 'Roboto', sans-serif;
 
 const Card = styled.div`
-  width: 879px;
+  max-width: 879px;
   height: 300.2px;
   padding: 100px 290px;
 `;
 
 const Title = styled.h1`
-  font-family: "Raleway", sans-serif;
+  width: 384px;
+  height: 88px;
+  font-family: "raleway", sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+  /* Off Black */
+  color: #0b0c0c;
 `;
 
 const Content = styled.p`
-  font-family: "Roboto", sans-serif;
-  padding-right: 70%;
+  width: 398px;
+  height: 95px;
+  font-style: normal;
+  font-size: 16px;
+
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(11, 12, 12);
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 22px;
+
+  /* Off Black */
+  color: #0b0c0c;
 `;
 
 function CardOne() {
