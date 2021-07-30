@@ -13,7 +13,7 @@ function CardTwo() {
   return (
     <Card>
       <ButtonLink
-        Links={Data.components[1].link}
+        Links={Data.components[0].link}
         bText={Data.components[1].buttonText}
       />
     </Card>

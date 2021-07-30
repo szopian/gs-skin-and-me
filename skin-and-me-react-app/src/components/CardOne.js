@@ -76,13 +76,8 @@ function CardOne() {
   return (
     <Card>
       <Container>
-        <Title>Meet the products chosen for you</Title>
-        <Content>
-          To get the best out of your Skin + Me treatment, it’s all about
-          keeping things simple. Discover our recommended routine – with what to
-          use and when to use it, with the products our expert Dermatology Team
-          recommend for you and your skin.
-        </Content>
+        <Title>{Data.components[0].title}</Title>
+        <Content>{Data.components[0].content}</Content>
         <ButtonLink
           Links={Data.components[0].link}
           bText={Data.components[0].buttonText}
