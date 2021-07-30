@@ -5,7 +5,7 @@ import ButtonOne from "./ButtonOne";
 const Card = styled.div`
   width: 879px;
   height: 300.2px;
-  /* background-color: red; */
+  background-color: red;
 `;
 
 function CardOne() {
