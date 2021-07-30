@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ButtonOne from "./ButtonOne";
+import { rotate } from "../animations/animation";
 
 const Card = styled.div`
   max-width: 879px;
@@ -59,13 +60,14 @@ const Img = styled.div`
 
 const Logo = styled.div`
   position: relative;
-  top: 50%;
+  top: 35%;
   text-align: center;
   transform: translate(0, -50%);
   padding: 1rem;
   font-size: 45px;
   color: #ffbc00;
   text-shadow: 3px 6px 1px rgba(212, 227, 238, 0.5);
+  animation: ${rotate} 6s linear infinite;
 `;
 
 function CardOne() {
