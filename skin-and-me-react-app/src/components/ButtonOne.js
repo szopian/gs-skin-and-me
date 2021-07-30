@@ -13,7 +13,7 @@ const Button = styled.button`
   font-style: normal;
   font-size: 13px;
   line-height: 16px;
-  font-weight: 600;
+  font-weight: 700 bold;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #0b0c0c;
