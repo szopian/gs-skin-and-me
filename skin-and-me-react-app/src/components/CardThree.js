@@ -7,8 +7,8 @@ const Card = styled.div`
   width: 100%;
   height: 241px;
   background-color: #f0f6fb;
+  display: grid;
   justify-content: center;
-  display: flex;
 `;
 
 const Wrapper = styled.div`
@@ -31,16 +31,15 @@ const ImgText = styled.h1`
 
 const Container = styled.div`
   grid-column: 1;
-  padding-right: 185px;
-  justify-content: space-between;
+  font-family: "proxima-nova", sans-serif;
+  padding: 0 46px 0 105px;
 `;
 
 const Title = styled.h1`
-  width: 384px;
-  height: 88px;
-  font-family: "raleway", sans-serif;
-  font-size: 40px;
-  line-height: 44px;
+  width: 250px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 28px;
   /* Off Black */
   color: #0b0c0c;
 `;

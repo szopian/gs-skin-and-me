@@ -4,18 +4,49 @@ import ButtonLink from "./ButtonLink";
 import { rotate } from "../animations/animation";
 import Data from "../data.json";
 
+import px2vw from "../utils/px2vw";
+
 const Card = styled.div`
-  max-width: 879px;
+  /* width: 879px;
   height: 300.2px;
   padding: 100px 290px;
   display: grid;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between; */
+  display: flex;
+  width: ${px2vw(320, 320)};
+  min-height: ${px2vw(200, 320)};
+  flex-direction: column;
+  padding: ${px2vw(20)};
+  margin: ${px2vw(20)};
+  background-color: ${(props) => props.bgColor};
+  height: 100%;
+
+  @media (min-width: 768px) {
+    width: ${px2vw(320, 768)};
+    min-height: ${px2vw(200, 768)};
+    height: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    width: ${px2vw(500)};
+    min-height: ${px2vw(300)};
+    height: 100%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* display: block; */
+    /* justify-content: center; */
+  }
 `;
 
 const Container = styled.div`
   grid-column: 1;
-  padding-right: 185px;
-  justify-content: space-between;
+  /* padding-right: 185px; */
+  /* justify-content: center;
+  align-items: center; */
+  /* justify-content: space-between; */
+  /* display: flex; */
 `;
 
 const Title = styled.h1`
@@ -49,14 +80,15 @@ const Content = styled.p`
 const Img = styled.div`
   width: 263.37px;
   height: 263.37px;
-  position: relative;
-  margin-top: 10px;
-  margin-right: -19px;
+  /* position: relative; */
+  /* margin-top: 10px;
+  margin-right: -19px; */
+  /* justify-content: center; */
 
   grid-column: 2;
 
   border: 4px dashed #ffbc00;
-  box-sizing: border-box;
+
   border-radius: 360px;
   box-shadow: 0px 20px 0px rgba(212, 227, 238, 0.8);
 `;
