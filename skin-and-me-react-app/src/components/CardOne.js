@@ -11,10 +11,10 @@ const Card = styled.div`
   height: 300.2px;
   padding: 100px 290px;
   display: grid;
-  display: flex;
-  justify-content: space-between; */
-  display: flex;
-  width: ${px2vw(320, 320)};
+  display: flex; */
+  justify-content: space-between;
+  display: grid;
+  width: ${px2vw(870)};
   min-height: ${px2vw(200, 320)};
   flex-direction: column;
   padding: ${px2vw(20)};
@@ -23,20 +23,19 @@ const Card = styled.div`
   height: 100%;
 
   @media (min-width: 768px) {
-    width: ${px2vw(320, 768)};
-    min-height: ${px2vw(200, 768)};
-    height: 100%;
-  }
-
-  @media (min-width: 1024px) {
-    width: ${px2vw(500)};
+    width: ${px2vw(870, 768)};
     min-height: ${px2vw(300)};
     height: 100%;
   }
 
-  @media only screen and (max-width: 800px) {
-    /* display: block; */
-    /* justify-content: center; */
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  @media (min-width: 1024px) {
+    width: ${px2vw(870, 1440)};
+    min-height: ${px2vw(300)};
+    height: 100%;
   }
 `;
 
