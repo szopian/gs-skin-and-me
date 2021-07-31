@@ -13,10 +13,9 @@ const Card = styled.div`
 `;
 
 const Container = styled.div`
-  padding: 0;
   grid-column: 1;
-  padding-right: 100px;
-  margin-top: -12px;
+  padding-right: 70px;
+  justify-self: space-between;
 `;
 
 const Title = styled.h1`
@@ -49,13 +48,14 @@ const List = styled.ul`
   grid-column: 2;
 
   height: 350px;
-  width: 430px;
+  width: 450px;
   display: block;
   font-family: "raleway", sans-serif;
   list-style: none;
   font-size: 13px;
   line-height: 15px;
   margin-top: 36px;
+  text-transform: uppercase;
   /* padding: 0; */
 `;
 
@@ -63,21 +63,26 @@ const ListItems = styled.li`
   border-bottom: 1px solid #597489;
   padding: 15px;
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: space-between;
+  /* text-decoration: none;
+  color: #182026; */
 `;
 
-const ListItemLasts = styled.li`
+const ListItemLast = styled.li`
   padding: 15px;
   display: flex;
   align-items: center;
+  cursor: pointer;
   justify-content: space-between;
+  text-transform: uppercase;
 `;
 
 const Text = styled.p``;
 
 const ArrowIcon = styled(RiArrowRightSLine)`
-  font-size: 30px;
+  font-size: 35px;
   justify-self: flex-end;
 `;
 
@@ -93,32 +98,26 @@ function CardTwo() {
         />
       </Container>
       <List>
-        <ListItems>
-          <Text>
-            How do I incorporate my Skin + Me into my skincare routine?
-          </Text>
+        <ListItems as="a" href={Data.components[1].FAQList.faqLink1}>
+          <Text>{Data.components[1].FAQList.faq1}</Text>
           <ArrowIcon />
         </ListItems>
-        <ListItems>
-          <Text>My skin is getting worse, what should I do?</Text>
+        <ListItems as="a" href={Data.components[1].FAQList.faqLink2}>
+          <Text>{Data.components[1].FAQList.faq2}</Text>
           <ArrowIcon />
         </ListItems>
-        <ListItems>
-          <Text>
-            How do I incorporate my Skin + Me into my skincare routine?
-          </Text>
+        <ListItems as="a" href={Data.components[1].FAQList.faqLink3}>
+          <Text>{Data.components[1].FAQList.faq3}</Text>
           <ArrowIcon />
         </ListItems>
-        <ListItems>
-          <Text>
-            How long will it take for me to see my results in the mirror?
-          </Text>
+        <ListItems as="a" href={Data.components[1].FAQList.faqLink4}>
+          <Text>{Data.components[1].FAQList.faq4}</Text>
           <ArrowIcon />
         </ListItems>
-        <ListItemLasts>
-          <Text>Can I use my own products whilst using Skin + Me?</Text>
+        <ListItemLast as="a" href={Data.components[1].FAQList.faqLink5}>
+          <Text>{Data.components[1].FAQList.faq5}</Text>
           <ArrowIcon />
-        </ListItemLasts>
+        </ListItemLast>
       </List>
     </Card>
   );

@@ -14,7 +14,8 @@ const Card = styled.div`
 
 const Container = styled.div`
   grid-column: 1;
-  padding-right: 180px;
+  padding-right: 185px;
+  justify-content: space-between;
 `;
 
 const Title = styled.h1`
