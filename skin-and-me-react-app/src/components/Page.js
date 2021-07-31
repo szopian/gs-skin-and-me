@@ -8,6 +8,8 @@ const Container = styled.div`
   position: absolute;
   background: #ffffff;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 `;
 
 function Page() {

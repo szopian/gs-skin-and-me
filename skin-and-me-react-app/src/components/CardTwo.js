@@ -15,7 +15,6 @@ const Card = styled.div`
 const Container = styled.div`
   grid-column: 1;
   padding-right: 70px;
-  justify-self: space-between;
 `;
 
 const Title = styled.h1`
@@ -56,7 +55,7 @@ const List = styled.ul`
   line-height: 15px;
   margin-top: 36px;
   text-transform: uppercase;
-  /* padding: 0; */
+  padding: 0;
 `;
 
 const ListItems = styled.li`
@@ -66,8 +65,8 @@ const ListItems = styled.li`
   cursor: pointer;
   align-items: center;
   justify-content: space-between;
-  /* text-decoration: none;
-  color: #182026; */
+  text-decoration: none;
+  color: #182026;
 `;
 
 const ListItemLast = styled.li`
@@ -77,6 +76,8 @@ const ListItemLast = styled.li`
   cursor: pointer;
   justify-content: space-between;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #182026;
 `;
 
 const Text = styled.p``;
