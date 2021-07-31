@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import CardOne from "./CardOne";
 import CardTwo from "./CardTwo";
-import CardThree from "./CardThree";
+// import CardThree from "./CardThree"; <CardThree />
 
 const Container = styled.div`
   position: absolute;
@@ -15,7 +15,6 @@ function Page() {
     <Container>
       <CardOne />
       <CardTwo />
-      <CardThree />
     </Container>
   );
 }

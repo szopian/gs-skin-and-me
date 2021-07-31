@@ -12,8 +12,9 @@ const Card = styled.div`
 `;
 
 const Container = styled.div`
+  padding: 0;
   grid-column: 1;
-  padding-right: 95px;
+  padding-right: 100px;
 `;
 
 const Title = styled.h1`
@@ -43,13 +44,24 @@ const Content = styled.p`
 `;
 
 const List = styled.ul`
+  padding: 0;
   grid-column: 2;
-  width: 422px;
+  width: 430px;
   display: block;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "raleway", sans-serif;
+  list-style: none;
+  font-size: 13px;
+  line-height: 15px;
 `;
 
-const ListItem = styled.li``;
+const ListItem = styled.li`
+  border-bottom: 1px solid #597489;
+  padding: 15px;
+`;
+
+const ListItemLast = styled.li`
+  padding: 15px;
+`;
 
 function CardTwo() {
   return (
@@ -73,7 +85,9 @@ function CardTwo() {
         <ListItem>
           How long will it take for me to see my results in the mirror?
         </ListItem>
-        <ListItem>Can I use my own products whilst using Skin + Me?</ListItem>
+        <ListItemLast>
+          Can I use my own products whilst using Skin + Me?
+        </ListItemLast>
       </List>
     </Card>
   );
