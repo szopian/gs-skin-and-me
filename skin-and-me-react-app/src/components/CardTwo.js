@@ -66,7 +66,7 @@ const ListItemLast = styled.li`
   padding: 15px;
 `;
 
-const SocialIcon = styled(RiArrowRightSLine)`
+const ArrowIcon = styled(RiArrowRightSLine)`
   font-size: 20px;
   display: flex-end;
 `;
@@ -85,23 +85,23 @@ function CardTwo() {
       <List>
         <ListItem>
           How do I incorporate my Skin + Me into my skincare routine?
-          <SocialIcon />
+          <ArrowIcon />
         </ListItem>
         <ListItem>
           My skin is getting worse, what should I do?
-          <SocialIcon />
+          <ArrowIcon />
         </ListItem>
         <ListItem>
           How do I incorporate my Skin + Me into my skincare routine?
-          <SocialIcon />
+          <ArrowIcon />
         </ListItem>
         <ListItem>
           How long will it take for me to see my results in the mirror?
-          <SocialIcon />
+          <ArrowIcon />
         </ListItem>
         <ListItemLast>
           Can I use my own products whilst using Skin + Me?
-          <SocialIcon />
+          <ArrowIcon />
         </ListItemLast>
       </List>
     </Card>
