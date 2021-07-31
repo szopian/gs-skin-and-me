@@ -7,7 +7,7 @@ import { RiArrowRightSLine } from "react-icons/ri";
 const Card = styled.div`
   max-width: 879px;
   height: 300.2px;
-  padding: 0 290px;
+  padding: 0 290px 100px 290px;
   display: grid;
   justify-content: center;
 `;
@@ -15,7 +15,7 @@ const Card = styled.div`
 const Container = styled.div`
   padding: 0;
   grid-column: 1;
-  padding-right: 100px;
+  padding-right: 60px;
   margin-top: -12px;
 `;
 
@@ -46,8 +46,8 @@ const Content = styled.p`
 `;
 
 const List = styled.ul`
-  padding: 0;
   grid-column: 2;
+
   width: 430px;
   display: block;
   font-family: "raleway", sans-serif;
@@ -68,7 +68,6 @@ const ListItemLast = styled.li`
 
 const ArrowIcon = styled(RiArrowRightSLine)`
   font-size: 20px;
-  display: flex-end;
 `;
 
 function CardTwo() {

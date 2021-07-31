@@ -4,9 +4,9 @@ import ButtonLink from "./ButtonLink";
 import Data from "../data.json";
 
 const Card = styled.div`
-  width: 1440px;
+  width: 100%;
   height: 241px;
-  background-color: yellow;
+  background-color: #f0f6fb;
 `;
 
 function CardThree() {
