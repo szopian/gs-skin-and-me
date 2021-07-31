@@ -99,23 +99,43 @@ function CardTwo() {
         />
       </Container>
       <List>
-        <ListItems as="a" href={Data.components[1].FAQList.faqLink1}>
+        <ListItems
+          as="a"
+          href={Data.components[1].FAQList.faqLink1}
+          target="_blank"
+        >
           <Text>{Data.components[1].FAQList.faq1}</Text>
           <ArrowIcon />
         </ListItems>
-        <ListItems as="a" href={Data.components[1].FAQList.faqLink2}>
+        <ListItems
+          as="a"
+          href={Data.components[1].FAQList.faqLink2}
+          target="_blank"
+        >
           <Text>{Data.components[1].FAQList.faq2}</Text>
           <ArrowIcon />
         </ListItems>
-        <ListItems as="a" href={Data.components[1].FAQList.faqLink3}>
+        <ListItems
+          as="a"
+          href={Data.components[1].FAQList.faqLink3}
+          target="_blank"
+        >
           <Text>{Data.components[1].FAQList.faq3}</Text>
           <ArrowIcon />
         </ListItems>
-        <ListItems as="a" href={Data.components[1].FAQList.faqLink4}>
+        <ListItems
+          as="a"
+          href={Data.components[1].FAQList.faqLink4}
+          target="_blank"
+        >
           <Text>{Data.components[1].FAQList.faq4}</Text>
           <ArrowIcon />
         </ListItems>
-        <ListItemLast as="a" href={Data.components[1].FAQList.faqLink5}>
+        <ListItemLast
+          as="a"
+          href={Data.components[1].FAQList.faqLink5}
+          target="_blank"
+        >
           <Text>{Data.components[1].FAQList.faq5}</Text>
           <ArrowIcon />
         </ListItemLast>
