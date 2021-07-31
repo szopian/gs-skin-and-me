@@ -7,7 +7,7 @@ import { RiArrowRightSLine } from "react-icons/ri";
 const Card = styled.div`
   max-width: 879px;
   height: 300.2px;
-  padding: 0 290px 100px 290px;
+  padding: 0px 290px 200px 290px;
   display: grid;
   justify-content: center;
 `;
@@ -15,7 +15,7 @@ const Card = styled.div`
 const Container = styled.div`
   padding: 0;
   grid-column: 1;
-  padding-right: 60px;
+  padding-right: 100px;
   margin-top: -12px;
 `;
 
@@ -48,6 +48,7 @@ const Content = styled.p`
 const List = styled.ul`
   grid-column: 2;
 
+  height: 350px;
   width: 430px;
   display: block;
   font-family: "raleway", sans-serif;
@@ -55,19 +56,29 @@ const List = styled.ul`
   font-size: 13px;
   line-height: 15px;
   margin-top: 36px;
+  /* padding: 0; */
 `;
 
-const ListItem = styled.li`
+const ListItems = styled.li`
   border-bottom: 1px solid #597489;
   padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
-const ListItemLast = styled.li`
+const ListItemLasts = styled.li`
   padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
+
+const Text = styled.p``;
 
 const ArrowIcon = styled(RiArrowRightSLine)`
-  font-size: 20px;
+  font-size: 30px;
+  justify-self: flex-end;
 `;
 
 function CardTwo() {
@@ -82,26 +93,32 @@ function CardTwo() {
         />
       </Container>
       <List>
-        <ListItem>
-          How do I incorporate my Skin + Me into my skincare routine?
+        <ListItems>
+          <Text>
+            How do I incorporate my Skin + Me into my skincare routine?
+          </Text>
           <ArrowIcon />
-        </ListItem>
-        <ListItem>
-          My skin is getting worse, what should I do?
+        </ListItems>
+        <ListItems>
+          <Text>My skin is getting worse, what should I do?</Text>
           <ArrowIcon />
-        </ListItem>
-        <ListItem>
-          How do I incorporate my Skin + Me into my skincare routine?
+        </ListItems>
+        <ListItems>
+          <Text>
+            How do I incorporate my Skin + Me into my skincare routine?
+          </Text>
           <ArrowIcon />
-        </ListItem>
-        <ListItem>
-          How long will it take for me to see my results in the mirror?
+        </ListItems>
+        <ListItems>
+          <Text>
+            How long will it take for me to see my results in the mirror?
+          </Text>
           <ArrowIcon />
-        </ListItem>
-        <ListItemLast>
-          Can I use my own products whilst using Skin + Me?
+        </ListItems>
+        <ListItemLasts>
+          <Text>Can I use my own products whilst using Skin + Me?</Text>
           <ArrowIcon />
-        </ListItemLast>
+        </ListItemLasts>
       </List>
     </Card>
   );
