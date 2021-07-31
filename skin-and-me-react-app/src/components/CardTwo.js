@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Data from "../data.json";
 import ButtonLink from "./ButtonLink";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 const Card = styled.div`
   max-width: 879px;
@@ -15,6 +16,7 @@ const Container = styled.div`
   padding: 0;
   grid-column: 1;
   padding-right: 100px;
+  margin-top: -12px;
 `;
 
 const Title = styled.h1`
@@ -52,6 +54,7 @@ const List = styled.ul`
   list-style: none;
   font-size: 13px;
   line-height: 15px;
+  margin-top: 36px;
 `;
 
 const ListItem = styled.li`
@@ -61,6 +64,11 @@ const ListItem = styled.li`
 
 const ListItemLast = styled.li`
   padding: 15px;
+`;
+
+const SocialIcon = styled(RiArrowRightSLine)`
+  font-size: 20px;
+  display: flex-end;
 `;
 
 function CardTwo() {
@@ -77,16 +85,23 @@ function CardTwo() {
       <List>
         <ListItem>
           How do I incorporate my Skin + Me into my skincare routine?
+          <SocialIcon />
         </ListItem>
-        <ListItem>My skin is getting worse, what should I do?</ListItem>
+        <ListItem>
+          My skin is getting worse, what should I do?
+          <SocialIcon />
+        </ListItem>
         <ListItem>
           How do I incorporate my Skin + Me into my skincare routine?
+          <SocialIcon />
         </ListItem>
         <ListItem>
           How long will it take for me to see my results in the mirror?
+          <SocialIcon />
         </ListItem>
         <ListItemLast>
           Can I use my own products whilst using Skin + Me?
+          <SocialIcon />
         </ListItemLast>
       </List>
     </Card>
