@@ -55,7 +55,6 @@ const List = styled.ul`
   line-height: 15px;
   margin-top: 36px;
   text-transform: uppercase;
-  padding: 0;
 `;
 
 const ListItems = styled.li`
