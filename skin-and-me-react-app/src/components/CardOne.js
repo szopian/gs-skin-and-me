@@ -14,10 +14,10 @@ const Card = styled.div`
   display: flex; */
   justify-content: space-between;
   display: grid;
-  width: ${px2vw(870)};
-  min-height: ${px2vw(200, 320)};
+  width: ${px2vw(870, 1440)};
+  min-height: ${px2vw(300, 300)};
   flex-direction: column;
-  padding: ${px2vw(20)};
+  padding: ${px2vw(100)};
   margin: ${px2vw(20)};
   background-color: ${(props) => props.bgColor};
   height: 100%;
@@ -41,11 +41,6 @@ const Card = styled.div`
 
 const Container = styled.div`
   grid-column: 1;
-  /* padding-right: 185px; */
-  /* justify-content: center;
-  align-items: center; */
-  /* justify-content: space-between; */
-  /* display: flex; */
 `;
 
 const Title = styled.h1`
@@ -76,20 +71,46 @@ const Content = styled.p`
   color: #0b0c0c;
 `;
 
+const ImgContainer = styled.div`
+  justify-content: center;
+  align-items: center;
+  grid-column: 2;
+
+  display: flex;
+  width: ${px2vw(320, 320)};
+  min-height: ${px2vw(200, 320)};
+  flex-direction: column;
+  height: 100%;
+
+  @media (min-width: 768px) {
+    width: ${px2vw(300, 768)};
+    min-height: ${px2vw(250, 768)};
+    height: 100%;
+  }
+  @media (max-width: 768px) {
+    padding: ${px2vw(20)};
+    margin: ${px2vw(20)};
+  }
+
+  @media (min-width: 1024px) {
+    width: ${px2vw(400)};
+    min-height: ${px2vw(250)};
+    height: 100%;
+  }
+`;
+
 const Img = styled.div`
   width: 263.37px;
   height: 263.37px;
-  /* position: relative; */
-  /* margin-top: 10px;
-  margin-right: -19px; */
-  /* justify-content: center; */
-
-  grid-column: 2;
 
   border: 4px dashed #ffbc00;
 
   border-radius: 360px;
   box-shadow: 0px 20px 0px rgba(212, 227, 238, 0.8);
+
+  @media (max-width: 768px) {
+    margin-top: 25px;
+  }
 `;
 
 const Logo = styled.div`
@@ -115,9 +136,11 @@ function CardOne() {
           bText={Data.components[0].buttonText}
         />
       </Container>
-      <Img>
-        <Logo>Skin + Me</Logo>
-      </Img>
+      <ImgContainer>
+        <Img>
+          <Logo>Skin + Me</Logo>
+        </Img>
+      </ImgContainer>
     </Card>
   );
 }
