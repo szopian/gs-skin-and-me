@@ -13,10 +13,10 @@ const Card = styled.div`
 
   /* justify-content: space-between; */
   display: grid;
-  width: ${px2vw(879, 1440)};
+  /* width: ${px2vw(879, 1440)}; */
   min-height: ${px2vw(300, 300)};
   flex-direction: column;
-  padding: ${px2vw(50)};
+  /* padding: ${px2vw(50)}; */
   margin: ${px2vw(20)};
   height: 100%;
 

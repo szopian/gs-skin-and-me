@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import CardOne from "./CardOne";
 import CardTwo from "./CardTwo";
-// import CardThree from "./CardThree";
+import CardThree from "./CardThree";
 
 import px2vw from "../utils/px2vw";
-import CardThree from "./CardThree";
 
 const Container = styled.div`
   background: #ffffff;
@@ -31,10 +30,11 @@ function Page() {
     <Container>
       <CardOne />
       <CardTwo />
+      <CardThree />
     </Container>
   );
 }
 
 export default Page;
 
-// <CardThree />;
+<CardThree />;
