@@ -3,13 +3,39 @@ import styled from "styled-components";
 import Data from "../data.json";
 import ButtonLink from "./ButtonLink";
 import { RiArrowRightSLine } from "react-icons/ri";
+import px2vw from "../utils/px2vw";
 
 const Card = styled.div`
-  max-width: 879px;
+  /* max-width: 879px;
   height: 300.2px;
   padding: 0px 290px 200px 290px;
   display: grid;
-  justify-content: center;
+  justify-content: center; */
+
+  justify-content: space-between;
+  display: grid;
+  width: ${px2vw(870, 1440)};
+  min-height: ${px2vw(300, 300)};
+  flex-direction: column;
+  padding: ${px2vw(100)};
+  margin: ${px2vw(20)};
+  height: 100%;
+
+  @media (min-width: 769px) {
+    width: ${px2vw(870, 768)};
+    min-height: ${px2vw(300)};
+    height: 100%;
+  }
+
+  @media (max-width: 760px) {
+    display: block;
+  }
+
+  @media (min-width: 1024px) {
+    width: ${px2vw(870, 1440)};
+    min-height: ${px2vw(300)};
+    /* height: 100%; */
+  }
 `;
 
 const Container = styled.div`

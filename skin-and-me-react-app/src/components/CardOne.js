@@ -7,11 +7,6 @@ import Data from "../data.json";
 import px2vw from "../utils/px2vw";
 
 const Card = styled.div`
-  /* width: 879px;
-  height: 300.2px;
-  padding: 100px 290px;
-  display: grid;
-  display: flex; */
   justify-content: space-between;
   display: grid;
   width: ${px2vw(870, 1440)};
@@ -19,7 +14,6 @@ const Card = styled.div`
   flex-direction: column;
   padding: ${px2vw(100)};
   margin: ${px2vw(20)};
-  background-color: ${(props) => props.bgColor};
   height: 100%;
 
   @media (min-width: 768px) {
@@ -28,7 +22,7 @@ const Card = styled.div`
     height: 100%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 760px) {
     display: block;
   }
 
@@ -76,18 +70,17 @@ const ImgContainer = styled.div`
   align-items: center;
   grid-column: 2;
 
-  display: flex;
   width: ${px2vw(320, 320)};
   min-height: ${px2vw(200, 320)};
   flex-direction: column;
   height: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: ${px2vw(300, 768)};
     min-height: ${px2vw(250, 768)};
     height: 100%;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 769px) {
     padding: ${px2vw(20)};
     margin: ${px2vw(20)};
   }
