@@ -4,25 +4,20 @@ import CardOne from "./CardOne";
 import CardTwo from "./CardTwo";
 import CardThree from "./CardThree";
 
-import px2vw from "../utils/px2vw";
-
 const Container = styled.div`
   background: #ffffff;
-  /* width: 1440px;
-  height: 1185px; */
   height: 100%;
   width: 100%;
   justify-content: center;
   display: grid;
+`;
 
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  /* margin: ${px2vw(32)}; */
-  /* max-width: 100%; */
-
-  @media (min-width: 1024px) {
-    /* flex-wrap: nowrap; */
-  }
+const Section = styled.div`
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  background-color: #f0f6fb;
 `;
 
 function Page() {
@@ -32,7 +27,9 @@ function Page() {
         <CardOne />
         <CardTwo />
       </Container>
-      <CardThree />
+      <Section>
+        <CardThree />
+      </Section>
     </>
   );
 }

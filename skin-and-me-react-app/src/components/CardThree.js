@@ -4,52 +4,29 @@ import ButtonLink from "./ButtonLink";
 import Data from "../data.json";
 import px2vw from "../utils/px2vw";
 import Image from "../images/package-icon.png";
-
-const Section = styled.div`
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  display: grid;
-  background-color: #f0f6fb;
-`;
+import Frame from "../images/frame.png";
 
 const Card = styled.div`
-  justify-content: space-between;
-  display: flex;
   width: ${px2vw(879, 1440)};
   /* min-height: ${px2vw(250, 250)}; */
   flex-direction: row;
   padding: ${px2vw(50)};
   margin: ${px2vw(20)};
   height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
 
   @media (min-width: 768px) {
     width: ${px2vw(600, 768)};
     min-height: ${px2vw(300)};
     height: 100%;
-    align-items: center;
-    justify-content: center;
   }
 
   @media (min-width: 1024px) {
-    width: ${px2vw(950, 1440)};
+    /* width: ${px2vw(950, 1440)}; */
     min-height: ${px2vw(300)};
     height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
   }
 `;
 
@@ -65,10 +42,22 @@ const Img = styled.div`
   background-size: cover;
 `;
 
+const Readme = styled.div`
+  height: 92px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+
+  background-image: url(${Frame});
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+`;
+
 const Container = styled.div`
   grid-column: 2;
   font-family: "proxima-nova", sans-serif;
-  padding: 0 46px 0 105px;
 `;
 
 const Title = styled.h1`
@@ -98,23 +87,25 @@ const Content = styled.p`
   color: #0b0c0c;
 `;
 
+const Link = styled.a``;
+
 function CardThree() {
   return (
-    <Section>
-      <Card>
-        <Wrapper>
-          <Img />
-          <Container>
-            <Title>{Data.components[2].title}</Title>
-            <Content>{Data.components[2].content}</Content>
-          </Container>
-          <ButtonLink
-            Links={Data.components[2].link}
-            bText={Data.components[2].buttonText}
-          />
-        </Wrapper>
-      </Card>
-    </Section>
+    <Card>
+      <Img>
+        <Link as="a" href="https://www.skinandme.com/">
+          <Readme />
+        </Link>
+      </Img>
+      <Container>
+        <Title>{Data.components[2].title}</Title>
+        <Content>{Data.components[2].content}</Content>
+      </Container>
+      <ButtonLink
+        Links={Data.components[2].link}
+        bText={Data.components[2].buttonText}
+      />
+    </Card>
   );
 }
 

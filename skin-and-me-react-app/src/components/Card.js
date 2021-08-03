@@ -23,7 +23,7 @@ export const Card = styled.div`
   }
 
   @media (min-width: 1024px) {
-    width: ${px2vw(950, 1440)};
+    /* width: ${px2vw(950, 1440)}; */
     min-height: ${px2vw(300)};
     height: 100%;
   }
