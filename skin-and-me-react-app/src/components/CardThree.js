@@ -52,12 +52,6 @@ const Wrapper = styled.div`
 const ImgContainer = styled.div`
   height: 92px;
   width: 120px;
-  background-color: yellow;
-`;
-
-const ImgText = styled.h1`
-  position: cover;
-  font-size: 45px;
 `;
 
 const Container = styled.div`
@@ -98,9 +92,7 @@ function CardThree() {
     <Section>
       <Card>
         <Wrapper>
-          <ImgContainer>
-            <ImgText>Skin + Me</ImgText>
-          </ImgContainer>
+          <ImgContainer></ImgContainer>
           <Container>
             <Title>{Data.components[2].title}</Title>
             <Content>{Data.components[2].content}</Content>

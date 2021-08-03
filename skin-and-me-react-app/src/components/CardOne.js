@@ -3,8 +3,10 @@ import styled from "styled-components";
 import ButtonLink from "./ButtonLink";
 import { rotate } from "../animations/animation";
 import Data from "../data.json";
-import px2vw from "../utils/px2vw";
+// import px2vw from "../utils/px2vw";
 import { Card, Container } from "./Card";
+
+import Image from "../images/products-image.png";
 
 const Title = styled.h1`
   width: 384px;
@@ -39,52 +41,16 @@ const ImgContainer = styled.div`
   align-items: center;
   grid-column: 2;
 
-  width: ${px2vw(320, 320)};
-  min-height: ${px2vw(200, 320)};
-  flex-direction: column;
-  height: 100%;
-
-  @media (min-width: 769px) {
-    width: ${px2vw(300, 768)};
-    min-height: ${px2vw(250, 768)};
-    height: 100%;
-  }
-  @media (max-width: 769px) {
-    padding: ${px2vw(20)};
-    margin: ${px2vw(20)};
-  }
-
-  @media (min-width: 1024px) {
-    width: ${px2vw(400)};
-    min-height: ${px2vw(250)};
-    height: 100%;
-  }
-`;
-
-const Img = styled.div`
   width: 263.37px;
   height: 263.37px;
-
-  border: 4px dashed #ffbc00;
-
-  border-radius: 360px;
-  box-shadow: 0px 20px 0px rgba(212, 227, 238, 0.8);
+  background-image: url(${Image});
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* animation: ${rotate} 6s linear infinite; */
 
   @media (max-width: 768px) {
     margin-top: 25px;
   }
-`;
-
-const Logo = styled.div`
-  position: relative;
-  top: 35%;
-  text-align: center;
-  transform: translate(0, -50%);
-  padding: 1rem;
-  font-size: 45px;
-  color: #ffbc00;
-  text-shadow: 3px 6px 1px rgba(212, 227, 238, 0.5);
-  animation: ${rotate} 6s linear infinite;
 `;
 
 function CardOne() {
@@ -98,11 +64,7 @@ function CardOne() {
           bText={Data.components[0].buttonText}
         />
       </Container>
-      <ImgContainer>
-        <Img>
-          <Logo>Skin + Me</Logo>
-        </Img>
-      </ImgContainer>
+      <ImgContainer></ImgContainer>
     </Card>
   );
 }
