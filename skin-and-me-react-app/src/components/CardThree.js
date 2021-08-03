@@ -3,25 +3,23 @@ import styled from "styled-components";
 import ButtonLink from "./ButtonLink";
 import Data from "../data.json";
 import px2vw from "../utils/px2vw";
+import Image from "../images/package-icon.png";
 
 const Section = styled.div`
+  height: 100%;
   width: 100%;
+  justify-content: center;
+  display: grid;
   background-color: #f0f6fb;
 `;
 
 const Card = styled.div`
-  width: 100%;
-  /* height: 241px; */
-
-  display: grid;
-  justify-content: center;
-
-  /* justify-content: space-between; */
-  display: grid;
-  /* width: ${px2vw(879, 1440)}; */
-  min-height: ${px2vw(300, 300)};
-  flex-direction: column;
-  /* padding: ${px2vw(50)}; */
+  justify-content: space-between;
+  display: flex;
+  width: ${px2vw(879, 1440)};
+  /* min-height: ${px2vw(250, 250)}; */
+  flex-direction: row;
+  padding: ${px2vw(50)};
   margin: ${px2vw(20)};
   height: 100%;
 
@@ -29,33 +27,46 @@ const Card = styled.div`
     width: ${px2vw(600, 768)};
     min-height: ${px2vw(300)};
     height: 100%;
-  }
-
-  @media (max-width: 768px) {
-    display: block;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (min-width: 1024px) {
     width: ${px2vw(950, 1440)};
     min-height: ${px2vw(300)};
     height: 100%;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
 const Wrapper = styled.div`
-  display: flexbox;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 290px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+  }
 `;
 
-const ImgContainer = styled.div`
+const Img = styled.div`
   height: 92px;
   width: 120px;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+
+  background-image: url(${Image});
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 const Container = styled.div`
-  grid-column: 1;
+  grid-column: 2;
   font-family: "proxima-nova", sans-serif;
   padding: 0 46px 0 105px;
 `;
@@ -92,7 +103,7 @@ function CardThree() {
     <Section>
       <Card>
         <Wrapper>
-          <ImgContainer></ImgContainer>
+          <Img />
           <Container>
             <Title>{Data.components[2].title}</Title>
             <Content>{Data.components[2].content}</Content>

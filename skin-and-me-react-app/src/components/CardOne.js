@@ -36,7 +36,7 @@ const Content = styled.p`
   color: #0b0c0c;
 `;
 
-const ImgContainer = styled.div`
+const Img = styled.div`
   justify-content: center;
   align-items: center;
   grid-column: 2;
@@ -50,6 +50,7 @@ const ImgContainer = styled.div`
 
   @media (max-width: 768px) {
     margin-top: 25px;
+    margin-left: 25%;
   }
 `;
 
@@ -64,7 +65,7 @@ function CardOne() {
           bText={Data.components[0].buttonText}
         />
       </Container>
-      <ImgContainer></ImgContainer>
+      <Img />
     </Card>
   );
 }
