@@ -8,6 +8,7 @@ const Button = styled.button`
   padding: 16px 24px;
   background: #ffffff;
   cursor: pointer;
+  align-self: flex-start;
 
   font-family: "Roboto", sans-serif;
   font-style: normal;
