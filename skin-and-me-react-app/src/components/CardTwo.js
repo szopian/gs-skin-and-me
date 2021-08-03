@@ -33,9 +33,10 @@ const Content = styled.p`
 const List = styled.ul`
   grid-column: 2;
 
-  height: 350px;
-  width: 450px;
-  display: block;
+  max-height: 350px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
   font-family: "raleway", sans-serif;
   list-style: none;
   font-size: 13px;
