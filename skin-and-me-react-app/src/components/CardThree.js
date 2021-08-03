@@ -11,7 +11,7 @@ const Img = styled.div`
   height: 160px;
   width: 174px;
   justify-content: center;
-  align-items: center;
+  align-self: center;
   grid-column: 1;
 
   background-image: url(${Image});
@@ -51,9 +51,6 @@ const Content = styled.p`
   font-size: 16px;
 
   font-family: "proxima-nova", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(11, 12, 12);
   font-size: 14px;
   line-height: 122%;
   margin-bottom: 38px;

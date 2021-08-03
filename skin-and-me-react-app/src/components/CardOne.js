@@ -27,7 +27,6 @@ const Content = styled.p`
   font-family: "proxima-nova", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: rgb(11, 12, 12);
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 38px;
@@ -37,8 +36,8 @@ const Content = styled.p`
 `;
 
 const Img = styled.div`
-  justify-content: center;
-  align-items: center;
+  justify-self: center;
+  align-self: flex-start;
   grid-column: 2;
 
   width: 263.37px;
@@ -49,8 +48,7 @@ const Img = styled.div`
   /* animation: ${rotate} 6s linear infinite; */
 
   @media (max-width: 768px) {
-    margin-top: 25px;
-    margin-left: 25%;
+    align-self: center;
   }
 `;
 

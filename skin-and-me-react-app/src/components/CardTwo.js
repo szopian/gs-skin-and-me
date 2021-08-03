@@ -22,7 +22,6 @@ const Content = styled.p`
   font-family: "proxima-nova", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: rgb(11, 12, 12);
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 7px;
