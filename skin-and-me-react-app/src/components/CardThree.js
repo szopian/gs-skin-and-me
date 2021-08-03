@@ -4,10 +4,15 @@ import ButtonLink from "./ButtonLink";
 import Data from "../data.json";
 import px2vw from "../utils/px2vw";
 
+const Section = styled.div`
+  width: 100%;
+  background-color: #f0f6fb;
+`;
+
 const Card = styled.div`
   width: 100%;
   /* height: 241px; */
-  background-color: #f0f6fb;
+
   display: grid;
   justify-content: center;
 
@@ -90,21 +95,23 @@ const Content = styled.p`
 
 function CardThree() {
   return (
-    <Card>
-      <Wrapper>
-        <ImgContainer>
-          <ImgText>Skin + Me</ImgText>
-        </ImgContainer>
-        <Container>
-          <Title>{Data.components[2].title}</Title>
-          <Content>{Data.components[2].content}</Content>
-        </Container>
-        <ButtonLink
-          Links={Data.components[2].link}
-          bText={Data.components[2].buttonText}
-        />
-      </Wrapper>
-    </Card>
+    <Section>
+      <Card>
+        <Wrapper>
+          <ImgContainer>
+            <ImgText>Skin + Me</ImgText>
+          </ImgContainer>
+          <Container>
+            <Title>{Data.components[2].title}</Title>
+            <Content>{Data.components[2].content}</Content>
+          </Container>
+          <ButtonLink
+            Links={Data.components[2].link}
+            bText={Data.components[2].buttonText}
+          />
+        </Wrapper>
+      </Card>
+    </Section>
   );
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import CardOne from "./CardOne";
 import CardTwo from "./CardTwo";
-// import CardThree from "./CardThree";
+import CardThree from "./CardThree";
 
 import px2vw from "../utils/px2vw";
 
@@ -27,10 +27,13 @@ const Container = styled.div`
 
 function Page() {
   return (
-    <Container>
-      <CardOne />
-      <CardTwo />
-    </Container>
+    <>
+      <Container>
+        <CardOne />
+        <CardTwo />
+      </Container>
+      <CardThree />
+    </>
   );
 }
 
