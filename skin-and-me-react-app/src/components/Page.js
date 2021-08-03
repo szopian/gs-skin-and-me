@@ -15,9 +15,11 @@ const Container = styled.div`
 const Section = styled.div`
   height: 100%;
   width: 100%;
+  display: flexbox;
   justify-content: center;
-  display: grid;
   background-color: #f0f6fb;
+  margin-top: 100px;
+  position: relative;
 `;
 
 function Page() {
@@ -27,6 +29,7 @@ function Page() {
         <CardOne />
         <CardTwo />
       </Container>
+
       <Section>
         <CardThree />
       </Section>
