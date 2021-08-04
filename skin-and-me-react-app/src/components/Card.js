@@ -5,24 +5,29 @@ export const Card = styled.div`
   justify-content: space-between;
   align-self: center;
   display: flex;
-  /* width: ${px2vw(320, 320)}; */
   flex-direction: row;
   padding: ${px2vw(50)};
   margin: ${px2vw(20)};
 
-  @media (min-width: 779px) {
+  @media (max-width: 400px) {
+    width: ${px2vw(320, 320)};
+    height: ${px2vw(200)};
+    height: 100%;
+  }
+
+  @media (min-width: 768px) {
     width: ${px2vw(650, 768)};
+    height: ${px2vw(300)};
     height: 100%;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
-    width: ${px2vw(650, 768)};
   }
 
   @media (min-width: 1024px) {
     width: ${px2vw(950, 1440)};
-    height: ${px2vw(300)};
+    height: ${px2vw(400)};
   }
 `;
 
