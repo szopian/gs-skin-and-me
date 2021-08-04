@@ -25,9 +25,15 @@ export const Card = styled.div`
     flex-direction: column;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1000px) {
     width: ${px2vw(950, 1440)};
-    height: ${px2vw(400)};
+    min-height: ${px2vw(300)};
+  }
+
+  @media (min-width: 1200px) {
+    width: ${px2vw(870, 1440)};
+    height: ${px2vw(300)};
+    height: 100%;
   }
 `;
 
