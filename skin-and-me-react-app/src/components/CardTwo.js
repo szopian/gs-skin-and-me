@@ -14,8 +14,8 @@ const Title = styled.h1`
 `;
 
 const Content = styled.p`
-  width: 286px;
-  height: 150px;
+  max-width: 286px;
+  max-height: 150px;
   font-style: normal;
   font-size: 16px;
 
@@ -24,7 +24,7 @@ const Content = styled.p`
   font-style: normal;
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 7px;
+  margin-bottom: 38px;
 
   /* Off Black */
   color: #0b0c0c;

@@ -19,8 +19,8 @@ const Title = styled.h1`
 `;
 
 const Content = styled.p`
-  width: 398px;
-  height: 95px;
+  max-width: 398px;
+  max-height: 95px;
   font-style: normal;
   font-size: 16px;
 
@@ -40,8 +40,8 @@ const Img = styled.div`
   align-self: flex-start;
   grid-column: 2;
 
-  width: 263.37px;
-  height: 263.37px;
+  min-width: 263.37px;
+  min-height: 263.37px;
   background-image: url(${Image});
   background-repeat: no-repeat;
   background-size: cover;

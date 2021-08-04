@@ -19,7 +19,6 @@ const Section = styled.div`
   justify-content: center;
   background-color: #f0f6fb;
   margin-top: 100px;
-  position: relative;
 `;
 
 function Page() {
