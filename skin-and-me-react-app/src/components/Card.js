@@ -10,7 +10,7 @@ export const Card = styled.div`
   margin: ${px2vw(20)};
 
   @media (max-width: 400px) {
-    width: ${px2vw(320, 320)};
+    width: ${px2vw(520, 620)};
     height: ${px2vw(200)};
     height: 100%;
   }

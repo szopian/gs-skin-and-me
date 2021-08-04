@@ -18,7 +18,6 @@ const Section = styled.div`
   display: flexbox;
   justify-content: center;
   background-color: #f0f6fb;
-  margin-top: 100px;
 `;
 
 function Page() {

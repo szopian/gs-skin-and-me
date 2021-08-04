@@ -36,8 +36,8 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  width: 250px;
-  height: 24px;
+  max-width: 250px;
+  min-height: 24px;
   font-size: 24px;
   line-height: 28px;
   /* Off Black */
@@ -45,8 +45,8 @@ const Title = styled.h1`
 `;
 
 const Content = styled.p`
-  width: 300px;
-  height: 95px;
+  max-width: 300px;
+  min-height: 95px;
   font-style: normal;
   font-size: 16px;
 

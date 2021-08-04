@@ -9,8 +9,8 @@ import { Card, Container } from "./Card";
 import Image from "../images/products-image.png";
 
 const Title = styled.h1`
-  width: 384px;
-  height: 88px;
+  max-width: 384px;
+  min-height: 88px;
   font-family: "raleway", sans-serif;
   font-size: 40px;
   line-height: 44px;
@@ -20,7 +20,7 @@ const Title = styled.h1`
 
 const Content = styled.p`
   max-width: 398px;
-  max-height: 95px;
+  min-height: 95px;
   font-style: normal;
   font-size: 16px;
 

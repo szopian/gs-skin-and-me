@@ -33,7 +33,7 @@ const Content = styled.p`
 const List = styled.ul`
   grid-column: 2;
 
-  max-height: 350px;
+  min-height: 350px;
   max-width: 450px;
   display: flex;
   flex-direction: column;
