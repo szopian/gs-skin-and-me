@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import ButtonLink from "./ButtonLink";
-import { rotate } from "../animations/animation";
 import Data from "../data.json";
 import { Card, Container } from "./CardStyles";
 import Image from "../images/products-image.png";
@@ -62,7 +61,6 @@ const Img = styled.div`
   background-image: url(${Image});
   background-repeat: no-repeat;
   background-size: cover;
-  /* animation: ${rotate} 6s linear infinite; */
 
   @media (max-width: 768px) {
     align-self: center;

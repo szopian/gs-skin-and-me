@@ -6,6 +6,7 @@ import ButtonLink from "./ButtonLink";
 import Data from "../data.json";
 import Image from "../images/package-icon.png";
 import Frame from "../images/frame.png";
+import { rotate } from "../animations/animation";
 
 function CardNewAroundHere() {
   return (
@@ -52,6 +53,7 @@ const Readme = styled.div`
   background-image: url(${Frame});
   background-repeat: no-repeat;
   cursor: pointer;
+  /* animation: ${rotate} 6s linear infinite; */
 `;
 
 const Title = styled.h1`
