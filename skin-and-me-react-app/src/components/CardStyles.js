@@ -24,12 +24,6 @@ export const Card = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     padding: ${px2vw(20)};
-    /* margin: ${px2vw(15)}; */
-  }
-
-  @media (min-width: 1000px) {
-    width: ${px2vw(950)};
-    min-height: ${px2vw(300)};
   }
 
   @media (min-width: 1200px) {
