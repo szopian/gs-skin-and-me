@@ -28,12 +28,12 @@ export const Card = styled.div`
   }
 
   @media (min-width: 1000px) {
-    width: ${px2vw(950, 1440)};
+    width: ${px2vw(950)};
     min-height: ${px2vw(300)};
   }
 
   @media (min-width: 1200px) {
-    width: ${px2vw(870, 1440)};
+    width: ${px2vw(870)};
     height: ${px2vw(300)};
     height: 100%;
   }
