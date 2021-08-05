@@ -20,6 +20,6 @@ npm install
 npm start / yarn start
 
 # Project Images
-<img src="skin-and-me-react-app/imagesGithub/img1.png" height="250px" align="left"/>
-<img src="skin-and-me-react-app/imagesGithub/img2.png" height="250px" align="left"/>
-<img src="skin-and-me-react-app/imagesGithub/img3.png" height="250px" align="left"/>
+<img src="skin-and-me-react-app/imagesGithub/img1.png" height="200px" align="left"/>
+<img src="skin-and-me-react-app/imagesGithub/img2.png" height="200px" align="left"/>
+<img src="skin-and-me-react-app/imagesGithub/img3.png" height="200px" align="left"/>
