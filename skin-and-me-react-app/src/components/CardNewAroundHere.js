@@ -38,7 +38,6 @@ const Img = styled.div`
   width: 174px;
   justify-content: center;
   align-self: center;
-  grid-column: 1;
 
   background-image: url(${Image});
   background-repeat: no-repeat;
@@ -48,7 +47,6 @@ const Img = styled.div`
 const Readme = styled.div`
   height: 160px;
   width: 160px;
-  grid-column: 1;
   margin: 20px 35px;
 
   background-image: url(${Frame});
@@ -58,7 +56,7 @@ const Readme = styled.div`
 
 const Title = styled.h1`
   max-width: 250px;
-  min-height: 24px;
+  min-height: 29px;
   font-size: 24px;
   line-height: 28px;
   /* Off Black */
@@ -67,8 +65,8 @@ const Title = styled.h1`
 `;
 
 const Content = styled.p`
-  max-width: 300px;
-  min-height: 95px;
+  max-width: 290px;
+  min-height: 80px;
   font-style: normal;
   font-size: 16px;
 

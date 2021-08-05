@@ -47,7 +47,7 @@ const Content = styled.p`
   font-style: normal;
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 22px;
+  margin-bottom: 38px;
   /* Off Black */
   color: #0b0c0c;
 `;

@@ -16,7 +16,7 @@ export const Card = styled.div`
   }
 
   @media (min-width: 768px) {
-    width: ${px2vw(650, 768)};
+    width: ${px2vw(660, 768)};
     height: ${px2vw(300)};
     height: 100%;
   }

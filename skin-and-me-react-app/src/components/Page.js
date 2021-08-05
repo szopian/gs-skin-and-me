@@ -9,8 +9,6 @@ const Section = styled.div`
   width: 100%;
   display: flexbox;
   justify-content: center;
-  /* background: #f0f6fb; */
-  /* background: #ffffff; */
   background: ${(props) => props.bgColor};
 `;
 
