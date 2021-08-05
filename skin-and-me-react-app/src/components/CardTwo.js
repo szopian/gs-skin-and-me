@@ -5,75 +5,6 @@ import ButtonLink from "./ButtonLink";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Card, Container } from "./Card";
 
-const Title = styled.h1`
-  font-family: "raleway", sans-serif;
-  font-size: 40px;
-  line-height: 56px;
-  /* Off Black */
-  color: #0b0c0c;
-`;
-
-const Content = styled.p`
-  max-width: 286px;
-  max-height: 150px;
-  font-style: normal;
-  font-size: 16px;
-
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 21px;
-  margin-bottom: 38px;
-
-  /* Off Black */
-  color: #0b0c0c;
-`;
-
-const List = styled.ul`
-  grid-column: 2;
-
-  min-height: 360px;
-  max-width: 450px;
-  display: flex;
-  flex-direction: column;
-  font-family: "raleway", sans-serif;
-  list-style: none;
-  font-size: 13px;
-  line-height: 15px;
-  margin-top: 36px;
-  text-transform: uppercase;
-`;
-
-const ListItems = styled.li`
-  border-bottom: 1px solid #597489;
-  padding: 15px;
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  justify-content: space-between;
-  text-decoration: none;
-  color: #182026;
-`;
-
-const ListItemLast = styled.li`
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  justify-content: space-between;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #182026;
-`;
-
-const Text = styled.p``;
-
-const ArrowIcon = styled(RiArrowRightSLine)`
-  font-size: 35px;
-  justify-self: flex-end;
-`;
-
 function CardTwo() {
   return (
     <Card>
@@ -132,3 +63,74 @@ function CardTwo() {
 }
 
 export default CardTwo;
+
+//STYLES
+
+const Title = styled.h1`
+  font-family: "raleway", sans-serif;
+  font-size: 40px;
+  line-height: 56px;
+  /* Off Black */
+  color: #0b0c0c;
+`;
+
+const Content = styled.p`
+  max-width: 286px;
+  max-height: 150px;
+  font-style: normal;
+  font-size: 16px;
+
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 38px;
+
+  /* Off Black */
+  color: #0b0c0c;
+`;
+
+const List = styled.ul`
+  grid-column: 2;
+
+  min-height: 360px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  font-family: "raleway", sans-serif;
+  list-style: none;
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 22px;
+  text-transform: uppercase;
+`;
+
+const ListItems = styled.li`
+  border-bottom: 1px solid #597489;
+  padding: 15px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #182026;
+`;
+
+const ListItemLast = styled.li`
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #182026;
+`;
+
+const Text = styled.p``;
+
+const ArrowIcon = styled(RiArrowRightSLine)`
+  font-size: 35px;
+  justify-self: flex-end;
+`;

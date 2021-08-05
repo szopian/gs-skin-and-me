@@ -3,10 +3,28 @@ import styled from "styled-components";
 import ButtonLink from "./ButtonLink";
 import { rotate } from "../animations/animation";
 import Data from "../data.json";
-// import px2vw from "../utils/px2vw";
 import { Card, Container } from "./Card";
-
 import Image from "../images/products-image.png";
+
+function CardOne() {
+  return (
+    <Card>
+      <Container>
+        <Title>{Data.components[0].title}</Title>
+        <Content>{Data.components[0].content}</Content>
+        <ButtonLink
+          Links={Data.components[0].link}
+          bText={Data.components[0].buttonText}
+        />
+      </Container>
+      <Img />
+    </Card>
+  );
+}
+
+export default CardOne;
+
+//STYLES
 
 const Title = styled.h1`
   max-width: 384px;
@@ -29,7 +47,7 @@ const Content = styled.p`
   font-style: normal;
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 38px;
+  margin-bottom: 22px;
 
   /* Off Black */
   color: #0b0c0c;
@@ -51,21 +69,3 @@ const Img = styled.div`
     align-self: center;
   }
 `;
-
-function CardOne() {
-  return (
-    <Card>
-      <Container>
-        <Title>{Data.components[0].title}</Title>
-        <Content>{Data.components[0].content}</Content>
-        <ButtonLink
-          Links={Data.components[0].link}
-          bText={Data.components[0].buttonText}
-        />
-      </Container>
-      <Img />
-    </Card>
-  );
-}
-
-export default CardOne;
