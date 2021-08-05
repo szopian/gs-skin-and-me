@@ -37,7 +37,7 @@ const Title = styled.h1`
 `;
 
 const Content = styled.p`
-  max-width: 398px;
+  max-width: 390px;
   min-height: 95px;
   font-style: normal;
   font-size: 16px;
@@ -66,6 +66,6 @@ const Img = styled.div`
 
   @media (max-width: 768px) {
     align-self: center;
-    margin: 25px;
+    margin: 25px 0;
   }
 `;
