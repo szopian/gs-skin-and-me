@@ -1,35 +1,30 @@
 import React from "react";
 import styled from "styled-components";
-import CardOne from "./CardOne";
-import CardTwo from "./CardTwo";
-import CardThree from "./CardThree";
-
-const Container = styled.div`
-  background: #ffffff;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  display: grid;
-`;
+import CardProducts from "./CardProducts";
+import CardFAQs from "./CardFAQs";
+import CardNewAroundHere from "./CardNewAroundHere";
 
 const Section = styled.div`
   height: 100%;
   width: 100%;
   display: flexbox;
   justify-content: center;
-  background-color: #f0f6fb;
+  /* background: #f0f6fb; */
+  /* background: #ffffff; */
+  background: ${(props) => props.bgColor};
 `;
 
-function Page() {
+function Page({ bgColor }) {
   return (
     <>
-      <Container>
-        <CardOne />
-        <CardTwo />
-      </Container>
-
-      <Section>
-        <CardThree />
+      <Section bgColor="#ffffff">
+        <CardProducts />
+      </Section>
+      <Section bgColor="#ffffff">
+        <CardFAQs />
+      </Section>
+      <Section bgColor="#f0f6fb">
+        <CardNewAroundHere />
       </Section>
     </>
   );

@@ -3,10 +3,10 @@ import styled from "styled-components";
 import ButtonLink from "./ButtonLink";
 import { rotate } from "../animations/animation";
 import Data from "../data.json";
-import { Card, Container } from "./Card";
+import { Card, Container } from "./CardStyles";
 import Image from "../images/products-image.png";
 
-function CardOne() {
+function CardProducts() {
   return (
     <Card>
       <Container>
@@ -22,7 +22,7 @@ function CardOne() {
   );
 }
 
-export default CardOne;
+export default CardProducts;
 
 //STYLES
 
@@ -48,15 +48,14 @@ const Content = styled.p`
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 22px;
-
   /* Off Black */
   color: #0b0c0c;
 `;
 
 const Img = styled.div`
+  display: flex;
   justify-self: center;
   align-self: flex-start;
-  grid-column: 2;
 
   min-width: 263.37px;
   min-height: 263.37px;
@@ -67,5 +66,6 @@ const Img = styled.div`
 
   @media (max-width: 768px) {
     align-self: center;
+    margin: 25px;
   }
 `;

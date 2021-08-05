@@ -9,8 +9,8 @@ export const Card = styled.div`
   padding: ${px2vw(50)};
   margin: ${px2vw(20)};
 
-  @media (max-width: 400px) {
-    width: ${px2vw(520, 620)};
+  @media (min-width: 400px) {
+    width: ${px2vw(500, 620)};
     height: ${px2vw(200)};
     height: 100%;
   }
@@ -37,6 +37,4 @@ export const Card = styled.div`
   }
 `;
 
-export const Container = styled.div`
-  grid-column: 1;
-`;
+export const Container = styled.div``;

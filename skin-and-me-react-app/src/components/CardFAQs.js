@@ -3,9 +3,9 @@ import styled from "styled-components";
 import Data from "../data.json";
 import ButtonLink from "./ButtonLink";
 import { RiArrowRightSLine } from "react-icons/ri";
-import { Card, Container } from "./Card";
+import { Card, Container } from "./CardStyles";
 
-function CardTwo() {
+function CardFAQs() {
   return (
     <Card>
       <Container>
@@ -62,7 +62,7 @@ function CardTwo() {
   );
 }
 
-export default CardTwo;
+export default CardFAQs;
 
 //STYLES
 
@@ -92,8 +92,6 @@ const Content = styled.p`
 `;
 
 const List = styled.ul`
-  grid-column: 2;
-
   min-height: 360px;
   max-width: 450px;
   display: flex;

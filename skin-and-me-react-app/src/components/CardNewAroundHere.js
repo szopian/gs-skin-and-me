@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Card } from "../components/Card";
+import { Card, Container } from "./CardStyles";
 import ButtonLink from "./ButtonLink";
 import Data from "../data.json";
 import Image from "../images/package-icon.png";
 import Frame from "../images/frame.png";
 
-function CardThree() {
+function CardNewAroundHere() {
   return (
     <Card>
       <Img>
@@ -29,7 +29,7 @@ function CardThree() {
   );
 }
 
-export default CardThree;
+export default CardNewAroundHere;
 
 //STYLES
 
@@ -56,11 +56,6 @@ const Readme = styled.div`
   cursor: pointer;
 `;
 
-const Container = styled.div`
-  /* grid-column: 2; */
-  font-family: "roboto", sans-serif;
-`;
-
 const Title = styled.h1`
   max-width: 250px;
   min-height: 24px;
@@ -68,6 +63,7 @@ const Title = styled.h1`
   line-height: 28px;
   /* Off Black */
   color: #0b0c0c;
+  font-family: "proxima-nova", sans-serif;
 `;
 
 const Content = styled.p`
